@@ -1,0 +1,5 @@
+The idea is to put the larges item at the end of the array (index size -1)
+The out counter start at size - 1 and decrements after a pass of the inner loop.
+The items at indices greater than outer is sorted.
+
+Both swaps and comparisons are proportional to N^2

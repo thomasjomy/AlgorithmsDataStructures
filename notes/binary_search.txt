@@ -1,0 +1,13 @@
+Logarithms are used to calculate the necessary steps in a binary search.
+Binary search provides significant speed increase over liner search.
+
+With a range of 1-100 it takes a maximum of 7 guesses to identify any number using binary search.
+20 comparisons for 1 Million records
+24 comparison for 10 Million records
+
+
+s = log2(r)
+Number of steps is equal to the logarithm to the base 2 of the range.
+
+
+

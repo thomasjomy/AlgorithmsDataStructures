@@ -1,0 +1,4 @@
+Breadth First Search
+---------------------
+Adjacent matrices are traversed first.
+We use Queue.

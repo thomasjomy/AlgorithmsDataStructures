@@ -1,0 +1,60 @@
+Selection sort
+--------------
+Selection sort improves on bubble sort by reducing the number of swaps necessary from O(N^2) to O(N)
+The number of comparisons needed remains O(N^2)
+Selection sort still offers significant improvement for large number of records.
+Swap time is more important that comparison time.
+
+Insertion sort
+---------------
+Insertion sort is best of elementary sorts. I
+It still executes in O(N^2) time.t is twice as fast as the bubble sort and somewhat faster that selection sort in normal scenarios.
+It is used in the final stages of more sophisticated sorts like quicksort.
+
+Group of items is partially sorted in insertion sort.
+
+Quicksort
+----------
+Most popular sorting algorithm. It is the fastest operating in log(n*log N) time.
+Quicksort algorithm operates by partitioning an array into two subarrays and then calling itself to quicksort each of these subarrays.
+Quick sort follows the divide and conquer strategy. It splits the problem into subproblem and solves the subproblems.
+Quick sort is recursive.
+
+Time complexity of quick sort is long(n * long n), provided partitioning is done in the middle. This is the best case.
+Median is the middle element of a sorted list. Ideally the pivot should be the median. Finding the median is not possible in an unsorted list.
+Therefor best case is not achievable.
+
+Quick sort doesn't take any extra space, but occupies the stack. The maximum length of the stack could be n.
+
+Worst case
+----------
+Worst case time complexity is O(N^2)
+This happens when list is already sorted in ascending or descending order.
+
+Optimization
+------------
+1. Select middle element as pivot.
+2. Select random element as pivot.
+
+Quick sort steps
+-----------------
+1. Choose a pivot
+2. Move all elements that are lower than the pivot to the left of the pivot and move all elements higher that the pivot to the right of it. (Partitioning)
+3. Recursively quick sort all the values to the right of the pivot and all values to the left of the pivot.
+
+
+pivot (Central point)
+---------------------
+
+
+partitioning
+
+
+quickSort(l, h) {
+  if(l < h) {
+    j = partition (l, h)l;
+    quickSort(l, j);
+    quickSort(j+1, h);
+  }
+  }
+}
